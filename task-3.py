@@ -22,11 +22,12 @@ If you feel like it, test with these remaining cases as well:
 2,1,3
 3,1,2
 """
-
+# queries the user for three numbers
 firstNumber = int(input("Give the first number: "))
 secondNumber = int(input("Give the second number: "))
 thirdNumber = int(input("Give the third number: "))
 
+# Check shortest number and print
 if firstNumber < ( secondNumber and thirdNumber):
     smallestNumber = firstNumber
     print("smallest number is", smallestNumber)
