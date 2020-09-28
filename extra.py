@@ -18,10 +18,10 @@ if n1>n2 and n1<n3:
     middleNumber = n1
     print(middleNumber)
 
-if n2>n1 and n2<n3:
+elif n2>n1 and n2<n3:
     middleNumber = n2
     print(middleNumber)
 
-if n3>n1 and n3<n2:
+elif n3>n1 and n3<n2:
     middleNumber = n3
     print(middleNumber)
