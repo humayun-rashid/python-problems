@@ -14,3 +14,19 @@ Display the numbers either in Integers (and observe that the example has an inev
 error) or display the numbers with decimals.
 """
 
+stringInput= str(input("Enter sequence:"))
+stringInput = stringInput.lower()
+sequenceLength= int(len(stringInput))
+
+A = (int(stringInput.count("a"))/sequenceLength)*100
+print("Proportion of A:",A ,"percent")
+
+T = (int(stringInput.count("t"))/sequenceLength)*100
+print("Proportion of T:",T ,"percent")
+
+C = (int(stringInput.count("c"))/sequenceLength)*100
+print("Proportion of A:",C ,"percent")
+
+G = (int(stringInput.count("g"))/sequenceLength)*100
+print("Proportion of G:",G ,"percent")
+

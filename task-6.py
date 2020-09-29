@@ -33,7 +33,6 @@ previous lectures information to solve this.
 Note: Exception handling is not needed, as it has not been covered yet
 """
 
-
 userNumber= input("Give a number:")
 checkString = any(map(str.isalpha, userNumber))
 checkDecimal=any(map(str.isdecimal, userNumber))
@@ -54,15 +53,9 @@ if "." in userNumber and checkString==False and (checkDecimal and checkDigit)==T
     if dotAmount == 1:
         convertFloat = float(userNumber)
         print("a valid float")
-        
+
 if  checkString==True and checkDecimal==False and checkDigit==False:
     print("Not a number (contains other than numbers)")
 
 if  "." in userNumber and checkString==True and checkDecimal==True and checkDigit==True:
     print("Not a number (contains other than numbers)")
-
-
-
-
-
-
