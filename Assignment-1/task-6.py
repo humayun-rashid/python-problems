@@ -36,11 +36,7 @@ Note: Exception handling is not needed, as it has not been covered yet
 userNumber= input("Give a number:")
 checkString = any(map(str.isalpha, userNumber))
 checkDecimal=any(map(str.isdecimal, userNumber))
-#checkAllNumber=userNumber.isalnum()
 checkDigit = any(map(str.isdigit, userNumber))
-#print(checkString)
-#print(checkDecimal)
-#print(checkDigit)
 
 if "." not in userNumber and checkString==False and (checkDecimal and checkDigit)==True:
     convertInt = int(userNumber)
@@ -54,8 +50,5 @@ if "." in userNumber and checkString==False and (checkDecimal and checkDigit)==T
         convertFloat = float(userNumber)
         print("a valid float")
 
-if  checkString==True and checkDecimal==False and checkDigit==False:
-    print("Not a number (contains other than numbers)")
-
-if  "." in userNumber and checkString==True and checkDecimal==True and checkDigit==True:
+if  (checkString==True and checkDecimal==False and checkDigit==False) or ("." in userNumber and checkString==True and checkDecimal==True and checkDigit==True):
     print("Not a number (contains other than numbers)")
