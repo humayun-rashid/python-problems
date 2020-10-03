@@ -11,7 +11,7 @@ Example output: Enter a number: 3
 2
 3
 """
-userNumber = int(input("Enter a number: "))
+n = int(input("Enter a number: "))
 
-for i in range (0-userNumber,0+userNumber+1,1):
+for i in range (0-n,0+n+1,1):
     print i
